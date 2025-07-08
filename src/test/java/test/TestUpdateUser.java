@@ -37,7 +37,7 @@ public class TestUpdateUser {
         randomName = RandomStringUtils.randomAlphabetic(6, 10);
 
         ValidatableResponse responseCreate = userApi.createUser(user);
-        userChk.CreateUserOk(responseCreate);
+        userChk.createUserOk(responseCreate);
 
         var creds = UserCreds.from(user);
         ValidatableResponse responseLogin = userApi.loginUser(creds);

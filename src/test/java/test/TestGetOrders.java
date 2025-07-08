@@ -31,7 +31,7 @@ public class TestGetOrders {
 
         user = User.random();
         ValidatableResponse createResponse = userApi.createUser(user);
-        userChk.CreateUserOk(createResponse);
+        userChk.createUserOk(createResponse);
         accessToken = userApi.getToken(createResponse);
     }
 

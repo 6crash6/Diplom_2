@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class UserChk {
 
     @Step("Создание пользователя")
-    public void CreateUserOk(ValidatableResponse createResponse){
+    public void createUserOk(ValidatableResponse createResponse){
         createResponse
                 .assertThat()
                 .body("success",equalTo(true))

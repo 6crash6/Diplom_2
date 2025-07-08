@@ -30,7 +30,7 @@ public class TestLogin {
         randomPassword = RandomStringUtils.randomAlphanumeric(8);
         user = User.random();
         ValidatableResponse response = userApi.createUser(user);
-        userChk.CreateUserOk(response);
+        userChk.createUserOk(response);
         accessToken = userApi.getToken(response);
     }
 

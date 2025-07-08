@@ -35,7 +35,7 @@ public class TestCreateUser {
     @Test
     public void createUser() {
         ValidatableResponse response = userApi.createUser(user);
-        userChk.CreateUserOk(response);
+        userChk.createUserOk(response);
         accessToken = userApi.getToken(response);
     }
 
@@ -43,7 +43,7 @@ public class TestCreateUser {
     @Test
     public void createExistUser() {
         ValidatableResponse response = userApi.createUser(user);
-        userChk.CreateUserOk(response);
+        userChk.createUserOk(response);
 
         ValidatableResponse response1 = userApi.createUser(user);
         userChk.createSameUser(response1);
